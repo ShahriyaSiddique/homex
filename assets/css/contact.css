@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contactImg img {
+  width: 100%;
+  max-height: 20vh;
+}
+
+.map {
+  max-height: 40vh;
+}
+
+.contactForm {
+  max-height: 40vh;
+}
