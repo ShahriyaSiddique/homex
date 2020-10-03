@@ -121,12 +121,12 @@ textarea {
   background-color: #ed67ff;
 }
 
-.button-next input {
+.btnMain input {
   background-color: #b309c1;
   color: white;
 }
 
-.button-next input:hover {
+.btnMain input:hover {
   background-color: #b309c1;
   color: white;
 }
@@ -156,7 +156,7 @@ select {
 .bike-position {
   /* position: absolute; */
   /* top: 710px; */
-  
+
   z-index: -1;
 }
 

@@ -73,7 +73,7 @@ input[type="tel"] {
   margin-top: -26px;
 }
 
-textarea {
+.regContactPersonInfo {
   height: 50px !important;
 }
 
@@ -123,12 +123,12 @@ textarea {
   background-color: #ed67ff;
 }
 
-.button-next input {
+.btnMain input {
   background-color: #b309c1;
   color: white;
 }
 
-.button-next input:hover {
+.btnMain input:hover {
   background-color: #b309c1;
   color: white;
 }
@@ -668,12 +668,84 @@ a:hover {
   max-height: 20vh;
 }
 
-.map {
-  max-height: 40vh;
+.contactFormWithMap .map {
+  /* max-height: 40vh; */
+  /* height: 40vh; */
 }
 
-.contactForm {
-  max-height: 40vh;
+.contactFormWithMap .contactForm {
+  /* max-height: 40vh; */
+  /* height: 40vh; */
+  width: 20.5rem;
+}
+
+.getInTouchTitle {
+  color: black;
+  font-weight: bold;
+}
+
+.getInTouchSubtitle {
+  line-height: 0;
+}
+
+.getInTouch {
+  background-color: #eaf3fb;
+  font-size: 13px;
+}
+
+@media (max-width: 576px) {
 }
 
 /* contact css end */
+
+/* footer section start*/
+
+.footer h3 {
+  font-size: 14px;
+  font-weight: 550;
+  margin-bottom: 24px;
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+}
+
+.footer span {
+  color: #b309c1;
+  font-size: 24px;
+}
+
+.footer hr {
+  margin-bottom: 2rem;
+  border: 0;
+  border-top: 2px solid #b309c1;
+}
+
+.copyright-footer {
+  background-color: #b309c1;
+  color: white;
+}
+
+.copyright-footer p {
+  font-weight: 550;
+  font-size: 14px;
+  color: #f6f6f6;
+}
+
+.footerLinks li {
+  list-style-type: none;
+}
+.footerLinks li a:hover {
+  color: black !important;
+}
+
+.footerLinks li > a {
+  color: black;
+  text-decoration: none;
+}
+
+.footerLinks li {
+  line-height: 2;
+}
+/* footer section end*/

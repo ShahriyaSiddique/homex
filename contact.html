@@ -15,9 +15,6 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <!-- custom css -->
-    <link rel="stylesheet" href="assets/css/navbar.css" />
-    <link rel="stylesheet" href="assets/css/contact.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
@@ -28,6 +25,11 @@
       rel="stylesheet"
     />
 
+    <!-- custom css -->
+    <!-- <link rel="stylesheet" href="assets/css/navbar.css" />
+     <link rel="stylesheet" href="assets/css/contact.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -35,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="nav-container container">
         <a class="navbar-brand" href="#"
-          ><img src="assets/images/logo.png" width="210px" alt=""
+          ><img src="assets/images/logo.png" class="navBarLogo" alt=""
         /></a>
         <button
           class="navbar-toggler"
@@ -52,9 +54,7 @@
         <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" id="activeNav" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link active" href="#">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Order List </a>
@@ -93,13 +93,141 @@
     <section class="contactFormWithMap">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 bg-success">
+          <div class="col-12 col-sm-12 col-md-7 bg-success">
             <div class="map"></div>
           </div>
-          <div class="col-12 col-sm-12 col-md-6 bg-warning">
-            <div class="contactForm"></div>
+          <div class="col-12 col-sm-12 col-md-5 d-flex justify-content-center">
+            <div class="contactForm">
+              <h3 class="getInTouchTitle py-2">Get in touch</h3>
+              <div class="getInTouchSubtitle pb-2">
+                <p class="subtitle">Have an query or some feedback for us?</p>
+                <p class="subtitle">
+                  Fill out the form below to contact our team
+                </p>
+              </div>
+
+              <form>
+                <div class="form-group">
+                  <label for="getInTouchNameId">Name</label>
+                  <input
+                    type="text"
+                    class="form-control getInTouch getInTouchName"
+                    id="getInTouchNameId"
+                    placeholder="My Name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="getInTouchPurposeId">Purpose</label>
+                  <input
+                    type="text"
+                    class="form-control getInTouch getInTouchPurpose"
+                    id="getInTouchPurposeId"
+                    placeholder="Service details"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="getInTouchEmailId">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control getInTouch getInTouchEmail"
+                    id="getInTouchEmailId"
+                    placeholder="user@email.com"
+                  />
+                </div>
+
+                <div class="form-group ml-auto">
+                  <label for="getInTouchInfoId">Information</label>
+                  <textarea
+                    type="text"
+                    class="form-control getInTouch getInTouchInfo"
+                    id="getInTouchInfoId"
+                    rows="3"
+                    placeholder="Hey I would love to talk to you about your services"
+                  ></textarea>
+                </div>
+
+                <!-- buttons -->
+                <div class="">
+                  <div class="buttonGetInTouch text-right btnMain">
+                    <input class="btn" type="button" value="Get In Touch" />
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="footer bg-light">
+      <hr />
+      <div class="container px-md-5 px-3">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>GET IN TOUCH</h3>
+            <div class="d-flex align-items-start">
+              <span class="material-icons"> location_on </span>
+              <p class="ml-1 text-wrap">
+                Head Office Address:<br />
+                10/25 Motijheel C/A, Dhaka-1200
+              </p>
+            </div>
+            <div class="d-flex align-items-start">
+              <span class="material-icons"> textsms </span>
+              <p class="ml-1">info@homexbd.com</p>
+            </div>
+            <div class="d-flex align-items-start">
+              <span class="material-icons"> phone_enabled </span>
+              <p class="ml-1">
+                Telephone: 9876767,<br />
+                8797878, 8668677<br />
+                Mobile: 0154454545 <br />Fax: 880-2-955456556
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>OUR SERVICES</h3>
+
+            <div class="footerLinks">
+              <ul>
+                <li><a href=""> Logistics </a></li>
+                <li><a href=""> Cargo Transportation </a></li>
+                <li><a href=""> Monthly Pay </a></li>
+                <li><a href=""> Warehousing </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>LEGEL</h3>
+            <div class="footerLinks">
+              <ul>
+                <li><a href=""> Terms of Use </a></li>
+                <li><a href=""> Privacy Policy </a></li>
+                <li><a href=""> Fraud Prevention </a></li>
+                <li><a href=""> Disclaimer </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3">
+            <h3>MERCHAINTISE</h3>
+            <div class="footerLinks">
+              <ul>
+                <li><a href=""> Agency Arrangement </a></li>
+                <li><a href=""> Registration </a></li>
+                <li><a href=""> Processes </a></li>
+                <li><a href=""> FAQ </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid copyright-footer">
+        <p class="text-center mb-0 py-3 font-italic">
+          Homex Courier Service Ltd. All rights reserved
+        </p>
       </div>
     </section>
 
