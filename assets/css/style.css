@@ -67,9 +67,10 @@ input[type="url"],
 input[type="email"],
 input[type="password"],
 input[type="tel"],
-textarea {
-  font-size: 13px;
-  height: 50px;
+textarea,
+select {
+  font-size: 13px !important;
+  height: 50px !important;
 }
 .submit-btn {
   margin-top: -26px;
@@ -96,13 +97,13 @@ textarea {
   height: 50px;
 } */
 
-.form-hello select {
+/* .form-hello select {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.21) 0%,
     rgba(51, 51, 51, 0.05) 77%
   );
-}
+} */
 
 .condition-row {
   font-family: real-mid;
@@ -143,12 +144,12 @@ textarea {
   top: 46px;
 }
 
-select {
+/* select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
-}
+} */
 
 .mainbox {
   width: 100%;
@@ -461,8 +462,12 @@ select {
   background-color: #b309c1;
 }
 
+.menu .dropdown-item:hover {
+  background-color: transparent;
+}
+
 .menu .dropdown-item:hover::before {
-  background-color: white;
+  background-color: transparent;
 }
 
 .menu a:hover {
@@ -491,6 +496,10 @@ select {
 
 .menu ul li .active::before {
   background-color: #b309c1 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* navBar css end */
@@ -563,12 +572,17 @@ select {
 }
 
 .border-all:focus-within {
-  border: thin solid black;
+  border: 2px solid #b309c1;
 }
 
 #visibility_off {
   margin-right: 0;
   background: #b5b5b552;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #b309c1;
 }
 
 /* .form-control:focus .login {
@@ -680,6 +694,31 @@ a:hover {
 .contactFormWithMap .map {
   /* max-height: 40vh; */
   /* height: 40vh; */
+  height: 350px;
+  margin-top: 50px;
+}
+.officeAddress {
+  margin-top: 20px;
+}
+.headOffice,
+.subOffice,
+.vl {
+  display: inline-block;
+}
+
+.headOffice h3,
+.subOffice h3 {
+  font-size: 14px;
+  font-weight: 550;
+}
+.headOffice p,
+.subOffice p {
+  font-size: 14px;
+}
+
+.vl {
+  border-left: 2px solid gray;
+  height: 48px;
 }
 
 .contactFormWithMap .contactForm {
@@ -697,12 +736,15 @@ a:hover {
   line-height: 0;
 }
 
-.getInTouch {
-  background-color: #eaf3fb;
-  font-size: 13px;
-}
-
-@media (max-width: 576px) {
+@media (max-width: 320px) {
+  .headOffice h3,
+  .subOffice h3 {
+    font-size: 12px;
+  }
+  .headOffice p,
+  .subOffice p {
+    font-size: 12px;
+  }
 }
 
 /* contact css end */

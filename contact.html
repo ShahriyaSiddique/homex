@@ -25,6 +25,13 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
     <!-- custom css -->
     <!-- <link rel="stylesheet" href="assets/css/navbar.css" />
      <link rel="stylesheet" href="assets/css/contact.css" /> -->
@@ -54,7 +61,7 @@
         <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home </a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Order List </a>
@@ -62,18 +69,32 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Booking </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Payment List </a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Tickets </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">FAQ </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ADD ON SERVICE </a>
-            </li>
+
             <li class="nav-item d-flex align-items-center ml-3 bg-red">
               <a class="nav-link" href="#">Logout </a>
               <span class="material-icons">login</span>
@@ -93,8 +114,22 @@
     <section class="contactFormWithMap">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-7 bg-success">
-            <div class="map"></div>
+          <div class="col-12 col-sm-12 col-md-7">
+            <div class="map" id="mapId"></div>
+            <div class="officeAddress">
+              <div class="headOffice mr-md-4 mr-2">
+                <h3>Head Office</h3>
+                <p>
+                  10/25 Motijheel C/A,<br />
+                  Dhaka-1200
+                </p>
+              </div>
+              <div class="vl"></div>
+              <div class="subOffice ml-md-4 ml-2">
+                <h3>Mirpur Office</h3>
+                <p>Mirpur 12, C/A, <br />Dhaka 1216, Bangladesh</p>
+              </div>
+            </div>
           </div>
           <div class="col-12 col-sm-12 col-md-5 d-flex justify-content-center">
             <div class="contactForm">
@@ -111,27 +146,37 @@
                   <label for="getInTouchNameId">Name</label>
                   <input
                     type="text"
-                    class="form-control getInTouch getInTouchName"
+                    class="form-control getInTouchName"
                     id="getInTouchNameId"
                     placeholder="My Name"
                   />
                 </div>
-
                 <div class="form-group">
+                  <label for="Purpose">Purpose</label>
+                  <select class="form-control" id="Purpose">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+
+                <!-- <div class="form-group">
                   <label for="getInTouchPurposeId">Purpose</label>
                   <input
-                    type="text"
-                    class="form-control getInTouch getInTouchPurpose"
+                    type="select"
+                    class="form-control getInTouchPurpose"
                     id="getInTouchPurposeId"
                     placeholder="Service details"
                   />
-                </div>
+                </div> -->
 
                 <div class="form-group">
                   <label for="getInTouchEmailId">Email Address</label>
                   <input
                     type="email"
-                    class="form-control getInTouch getInTouchEmail"
+                    class="form-control getInTouchEmail"
                     id="getInTouchEmailId"
                     placeholder="user@email.com"
                   />
@@ -141,7 +186,7 @@
                   <label for="getInTouchInfoId">Information</label>
                   <textarea
                     type="text"
-                    class="form-control getInTouch getInTouchInfo"
+                    class="form-control getInTouchInfo"
                     id="getInTouchInfoId"
                     rows="3"
                     placeholder="Hey I would love to talk to you about your services"
@@ -250,5 +295,11 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="assets/js/map.js"></script>
   </body>
 </html>
