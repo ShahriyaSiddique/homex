@@ -32,7 +32,6 @@ $("#submitInputs").click(function () {
   alert($("#merchantName").val());
 });
 
-
 // $("#submitInputs").submit(function (event) {
 //   alert($("#merchantName").val());
 //   event.preventDefault();

@@ -451,6 +451,10 @@ select {
   background-color: #b309c1;
 }
 
+.menu .dropdown-item:hover::before {
+  background-color: white;
+}
+
 .menu a:hover {
   color: #b309c1 !important;
 }

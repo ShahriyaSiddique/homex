@@ -67,18 +67,33 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Booking </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Payment List </a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Tickets </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">FAQ </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ADD ON SERVICE </a>
-            </li>
+
             <li class="nav-item d-flex align-items-center ml-3 bg-red">
               <a class="nav-link" href="#">Logout </a>
               <span class="material-icons">login</span>
@@ -120,88 +135,88 @@
           class="form-container col-md-12 col-12 d-flex justify-content-center mt-5"
         >
           <!-- Merchant information start -->
+          <form action="">
+            <div id="marchent-info" class="form-section">
+              <h3 class="signupTitle">Merchant information</h3>
+              <p class="subtitle">Details about you</p>
 
-          <div id="marchent-info" class="form-section">
-            <h3 class="signupTitle">Merchant information</h3>
-            <p class="subtitle">Details about you</p>
-
-            <form>
-              <div class="form-group mb20">
-                <label for="merchantName">Full Name *</label>
-                <input
-                  type="text"
-                  class="form-control singleRowForm"
-                  id="merchantName"
-                  placeholder="e.g: Full Name"
-                />
-              </div>
-
-              <div class="form-row">
-                <div class="col-md-6 col-12 mb20">
-                  <label for="merchantNid">National ID *</label>
+              <form id="one">
+                <div class="form-group mb20">
+                  <label for="merchantName">Full Name *</label>
                   <input
                     type="text"
-                    id="merchantNid"
-                    class="form-control mr-5 doubleRowForm"
-                    placeholder="e.g: XXXXXXXXXX"
+                    class="form-control singleRowForm"
+                    id="merchantName"
+                    placeholder="e.g: Full Name"
                   />
                 </div>
-                <div class="col-md-6 col-12 mb20">
-                  <label for="merchantEmail">Email address *</label>
-                  <input
-                    type="email"
-                    id="merchantEmail"
-                    class="form-control doubleRowForm"
-                    placeholder="e.g: user@email.com"
-                  />
+
+                <div class="form-row">
+                  <div class="col-md-6 col-12 mb20">
+                    <label for="merchantNid">National ID *</label>
+                    <input
+                      type="text"
+                      id="merchantNid"
+                      class="form-control mr-5 doubleRowForm"
+                      placeholder="e.g: XXXXXXXXXX"
+                    />
+                  </div>
+                  <div class="col-md-6 col-12 mb20">
+                    <label for="merchantEmail">Email address *</label>
+                    <input
+                      type="email"
+                      id="merchantEmail"
+                      class="form-control doubleRowForm"
+                      placeholder="e.g: user@email.com"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="form-row">
-                <div class="col-md-6 col-12 mb20">
-                  <label for="merchantMobile">Mobile number *</label>
-                  <input
-                    type="tel"
-                    id="merchantMobile"
-                    class="form-control doubleRowForm"
-                    placeholder="e.g: 01XXXXXXXX"
-                  />
+                <div class="form-row">
+                  <div class="col-md-6 col-12 mb20">
+                    <label for="merchantMobile">Mobile number *</label>
+                    <input
+                      type="tel"
+                      id="merchantMobile"
+                      class="form-control doubleRowForm"
+                      placeholder="e.g: 01XXXXXXXX"
+                    />
+                  </div>
+                  <div class="col-md-6 col-12 mb20">
+                    <label for="merchantPass">Password *</label>
+                    <input
+                      type="password"
+                      id="merchantPass"
+                      class="form-control doubleRowForm"
+                      placeholder="e.g: AwC2855ty"
+                    />
+                  </div>
                 </div>
-                <div class="col-md-6 col-12 mb20">
-                  <label for="merchantPass">Password *</label>
-                  <input
-                    type="password"
-                    id="merchantPass"
-                    class="form-control doubleRowForm"
-                    placeholder="e.g: AwC2855ty"
-                  />
+
+                <!-- buttons -->
+                <div
+                  class="signupButtonBox d-flex justify-content-md-end justify-content-center"
+                >
+                  <div class="btnMain text-md-right text-center">
+                    <input
+                      id="merchantToBusiness"
+                      class="btn px-5 py-2"
+                      type="button"
+                      value="Next"
+                    />
+                  </div>
                 </div>
-              </div>
+              </form>
+            </div>
+            <!-- Merchant information end -->
 
-              <!-- buttons -->
-              <div
-                class="signupButtonBox d-flex justify-content-md-end justify-content-center"
-              >
-                <div class="btnMain text-md-right text-center">
-                  <input
-                    id="merchantToBusiness"
-                    class="btn px-5 py-2"
-                    type="button"
-                    value="Next"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- Merchant information end -->
+            <!-- Business information start -->
 
-          <!-- Business information start -->
+            <div id="business-info" class="form-section display-none">
+              <h3 class="signupTitle">Business information</h3>
+              <p class="subtitle">Details about your business</p>
 
-          <div id="business-info" class="form-section display-none">
-            <h3 class="signupTitle">Business information</h3>
-            <p class="subtitle">Details about your business</p>
-
-            <form>
+              <!-- <form> -->
               <div class="form-row">
                 <div class="col-md-6 col-12 mb20">
                   <label for="businessName">Business Name *</label>
@@ -288,16 +303,16 @@
                   />
                 </div>
               </div>
-            </form>
-          </div>
+              <!-- </form> -->
+            </div>
 
-          <!-- Business information end -->
+            <!-- Business information end -->
 
-          <div id="contact-info" class="form-section display-none">
-            <h3 class="signupTitle">Contact person detail</h3>
-            <p class="subtitle">Details about Contact person</p>
+            <div id="contact-info" class="form-section display-none">
+              <h3 class="signupTitle">Contact person detail</h3>
+              <p class="subtitle">Details about Contact person</p>
 
-            <form>
+              <!-- <form> -->
               <div class="form-group mb20">
                 <label for="contactFullName">Full name</label>
                 <input
@@ -363,13 +378,14 @@
                   <input
                     class="btn px-5 py-2"
                     id="submitInputs"
-                    type="button"
+                    type="submit"
                     value="Finish"
                   />
                 </div>
               </div>
-            </form>
-          </div>
+              <!-- </form> -->
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -409,5 +425,8 @@
     ></script>
     <script src="assets/js/custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script> -->
   </body>
 </html>
