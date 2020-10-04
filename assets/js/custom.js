@@ -28,13 +28,8 @@ $(document).ready(function () {
   });
 });
 
-$("#submitInputs").click(function () {
-  alert($("#merchantName").val());
-});
-
-// $("#submitInputs").submit(function (event) {
+// $("#submitInputs").click(function () {
 //   alert($("#merchantName").val());
-//   event.preventDefault();
 // });
 
 /* bank-bkash-switch */

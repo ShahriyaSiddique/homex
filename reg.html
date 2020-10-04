@@ -70,10 +70,9 @@
 
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle has"
                 href="#"
                 id="navbarDropdown"
-                role="button"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
@@ -114,7 +113,7 @@
             <img src="assets/images/logo.png" alt="" />
           </div>
         </div> -->
-        <div class="col-lg-12 col-md-12 col-12 d-flex justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-center">
           <div class="progress-container">
             <div class="progress-name d-flex justify-content-between">
               <p>Merchant Details</p>
@@ -132,7 +131,7 @@
     <section class="container-fluid">
       <div class="row">
         <div
-          class="form-container col-md-12 col-12 d-flex justify-content-center mt-5"
+          class="form-container container col-12 col-sm-12 col-md-12 d-flex justify-content-center mt-5"
         >
           <!-- Merchant information start -->
           <form action="">
@@ -140,73 +139,84 @@
               <h3 class="signupTitle">Merchant information</h3>
               <p class="subtitle">Details about you</p>
 
-              <form id="one">
-                <div class="form-group mb20">
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
                   <label for="merchantName">Full Name *</label>
                   <input
                     type="text"
-                    class="form-control singleRowForm"
+                    class="form-control"
                     id="merchantName"
                     placeholder="e.g: Full Name"
                   />
                 </div>
 
-                <div class="form-row">
-                  <div class="col-md-6 col-12 mb20">
-                    <label for="merchantNid">National ID *</label>
-                    <input
-                      type="text"
-                      id="merchantNid"
-                      class="form-control mr-5 doubleRowForm"
-                      placeholder="e.g: XXXXXXXXXX"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12 mb20">
-                    <label for="merchantEmail">Email address *</label>
-                    <input
-                      type="email"
-                      id="merchantEmail"
-                      class="form-control doubleRowForm"
-                      placeholder="e.g: user@email.com"
-                    />
-                  </div>
+                <div class="col-12 col-sm-12 col-md-6 mb20">
+                  <label for="merchantNid">National ID *</label>
+                  <input
+                    type="text"
+                    id="merchantNid"
+                    class="form-control mr-5"
+                    placeholder="e.g: XXXXXXXXXX"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
+                  <label for="merchantEmail">Email address *</label>
+                  <input
+                    type="email"
+                    id="merchantEmail"
+                    class="form-control"
+                    placeholder="e.g: user@email.com"
+                  />
                 </div>
 
-                <div class="form-row">
-                  <div class="col-md-6 col-12 mb20">
-                    <label for="merchantMobile">Mobile number *</label>
-                    <input
-                      type="tel"
-                      id="merchantMobile"
-                      class="form-control doubleRowForm"
-                      placeholder="e.g: 01XXXXXXXX"
-                    />
-                  </div>
-                  <div class="col-md-6 col-12 mb20">
-                    <label for="merchantPass">Password *</label>
-                    <input
-                      type="password"
-                      id="merchantPass"
-                      class="form-control doubleRowForm"
-                      placeholder="e.g: AwC2855ty"
-                    />
-                  </div>
+                <div class="col-md-6 col-12 mb20">
+                  <label for="merchantMobile">Mobile number *</label>
+                  <input
+                    type="tel"
+                    id="merchantMobile"
+                    class="form-control"
+                    placeholder="e.g: 01XXXXXXXX"
+                  />
                 </div>
+              </div>
 
-                <!-- buttons -->
-                <div
-                  class="signupButtonBox d-flex justify-content-md-end justify-content-center"
-                >
-                  <div class="btnMain text-md-right text-center">
-                    <input
-                      id="merchantToBusiness"
-                      class="btn px-5 py-2"
-                      type="button"
-                      value="Next"
-                    />
-                  </div>
+              <div class="form-row">
+                <div class="col-md-6 col-12 mb20 pr-md-3">
+                  <label for="merchantPass">Password *</label>
+                  <input
+                    type="password"
+                    id="merchantPass"
+                    class="form-control"
+                    placeholder="e.g: AwC2855ty"
+                  />
                 </div>
-              </form>
+                <div class="col-md-6 col-12 mb20">
+                  <label for="merchantPassConfirm">Confirm Password *</label>
+                  <input
+                    type="password"
+                    id="merchantPassConfirm"
+                    class="form-control"
+                    placeholder="e.g: AwC2855ty"
+                  />
+                </div>
+              </div>
+
+              <!-- buttons -->
+              <div
+                class="signupButtonBox d-flex justify-content-md-end justify-content-center"
+              >
+                <div class="btnMain text-md-right text-center">
+                  <input
+                    id="merchantToBusiness"
+                    class="btn px-5 py-2"
+                    type="button"
+                    value="Next"
+                  />
+                </div>
+              </div>
             </div>
             <!-- Merchant information end -->
 
@@ -218,65 +228,65 @@
 
               <!-- <form> -->
               <div class="form-row">
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
                   <label for="businessName">Business Name *</label>
                   <input
                     type="text"
                     id="businessName"
-                    class="form-control mr-5 doubleRowForm"
+                    class="form-control mr-5"
                     placeholder="e.g Business Name"
                   />
                 </div>
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20">
                   <label for="businessType">Business type *</label>
                   <input
                     type="text"
                     id="businessType"
-                    class="form-control doubleRowForm"
+                    class="form-control"
                     placeholder="e.g Business type"
                   />
                 </div>
               </div>
 
               <div class="form-row">
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
                   <label for="businessOfficialAddress"
                     >Official address *</label
                   >
                   <input
                     type="text"
                     id="businessOfficialAddress"
-                    class="form-control doubleRowForm"
+                    class="form-control"
                     placeholder="e.g 8/9, Mirpur-10, Dhaka-1207"
                   />
                 </div>
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20">
                   <label for="businessPickUpAddress">Pick up address *</label>
                   <input
                     type="text"
                     id="businessPickUpAddress"
-                    class="form-control doubleRowForm"
+                    class="form-control"
                     placeholder="e.g 15, Shukrabad, Dhaka"
                   />
                 </div>
               </div>
 
               <div class="form-row">
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
                   <label for="businessWebsite">Website</label>
                   <input
                     type="url"
                     id="businessWebsite"
-                    class="form-control doubleRowForm"
+                    class="form-control"
                     placeholder="e.g www.something.com"
                   />
                 </div>
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20">
                   <label for="businessFB">Facebook page *</label>
                   <input
                     type="url"
                     id="businessFB"
-                    class="form-control doubleRowForm"
+                    class="form-control"
                     placeholder="e.g  www.facebook.com/NewBusiness"
                   />
                 </div>
@@ -317,28 +327,28 @@
                 <label for="contactFullName">Full name</label>
                 <input
                   type="text"
-                  class="form-control singleRowForm"
+                  class="form-control"
                   id="contactFullName"
                   placeholder="e.g: Full name"
                 />
               </div>
 
               <div class="form-row">
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20 pr-md-3">
                   <label for="contactMobile">Mobile number *</label>
                   <input
                     type="tel"
                     id="contactMobile"
-                    class="form-control mr-5 doubleRowForm"
+                    class="form-control"
                     placeholder="e.g: 01XXXXXXXX"
                   />
                 </div>
-                <div class="col-md-6 col-12 mb20">
+                <div class="col-12 col-sm-12 col-md-6 mb20">
                   <label for="contactEmail">Email address *</label>
                   <input
                     type="email"
                     id="contactEmail"
-                    class="form-control doubleRowForm"
+                    class="form-control"
                     placeholder="e.g: user@email.com"
                   />
                 </div>
@@ -348,7 +358,7 @@
                 <label for="contactPersonInfo">Information</label>
                 <textarea
                   type="text"
-                  class="form-control singleRowForm regContactPersonInfo"
+                  class="form-control regContactPersonInfo"
                   id="contactPersonInfo"
                   rows="2"
                 ></textarea>
@@ -423,8 +433,9 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/js/custom.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
 
     <!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script> -->
